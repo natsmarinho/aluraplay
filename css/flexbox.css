@@ -60,14 +60,40 @@
     flex-flow: column wrap;
 }
 
-@media (min-width: 834px){
+@media (min-width: 768px){
     /*CABECALHO*/
+
+    .cabecalho__container{
+        z-index: 1;
+    }
     .cabecalho__pesquisar__item{
         display: block;
+
+    }
+
+    .superior__secao__container{
+        margin-left: 75px;
     }
 
     /*RODAPE*/
     .rodape__container{
         justify-content: space-between;
+    }
+
+    .menu__container{
+        position: fixed;
+        left: 0%;
+        width: 74px;
+        height: 100%;
+    }
+
+    .menu__lista{
+        flex-direction: column;
+        justify-content:flex-start;
+        margin-top: 90px;
+    }
+
+    .menu__itens{
+        padding-bottom: 40px;
     }
 }
